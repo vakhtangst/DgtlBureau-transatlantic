@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Inter Tight";
+  src: url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap");
+}
+@font-face {
+  font-family: "Dewi";
+  font-weight: 700;
+  src: url(../public/fonts/RFDewiExtended-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-style: normal;
+}
+
+input {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
