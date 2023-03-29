@@ -1,6 +1,3 @@
-.nav {
-}
-
 .nav__list {
   display: flex;
   flex-direction: column;
@@ -9,6 +6,10 @@
 
 .nav__item:not(:last-child) {
   margin-bottom: 40px;
+}
+
+.nav__item--footer:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .nav__link {
@@ -23,4 +24,18 @@
 .nav__link:focus,
 .nav__link:hover {
   color: #18bbfe;
+}
+
+.nav__link--footer {
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+.nav__link--footer:active,
+.nav__link--footer:focus,
+.nav__link--footer:hover {
+  opacity: 1;
+  color: #ffffff;
 }

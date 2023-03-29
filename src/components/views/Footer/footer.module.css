@@ -1,0 +1,28 @@
+.footer {
+  background-color: #222222;
+  padding: 56px 20px;
+}
+
+.footer__logo {
+  cursor: pointer;
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.privasy__policy,
+.privasy__company {
+  font-family: "Inter Tight";
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.privasy__policy {
+  text-decoration-line: underline;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.privasy__company {
+  font-weight: 500;
+}
