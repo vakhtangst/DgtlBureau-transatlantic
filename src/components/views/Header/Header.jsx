@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { HandySvg } from "handy-svg";
+import Menu from "components/common/Menu/Menu";
 import IconButton from "components/ui/IconButton";
 import logo from "../../../assets/images/mobile/svg/logo-mobile-header.svg";
 import stick from "../../../assets/images/mobile/svg/open-stick.svg";
-import closeBtn from "../../../assets/images/mobile/svg/close-btn.svg";
+import cn from "classnames";
 import styles from "./header.module.css";
 
 const Header = () => {
@@ -17,29 +18,37 @@ const Header = () => {
         width="141"
         height="32"
       />
-
+      <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <div className={styles.openBtn__wrapper}>
-        <IconButton className={styles.openBtn}>
+        <IconButton
+          className={styles.openBtn}
+          onClick={() => setOpenMenu(!openMenu)}
+        >
           <HandySvg
             src={stick}
             width={22}
             height={3}
-            className={styles.openBtn__top}
+            className={cn(styles.openBtn__top, {
+              [styles["openBtn__top--open"]]: openMenu,
+            })}
           />
           <HandySvg
             src={stick}
             width={22}
             height={3}
-            className={styles.openBtn__middle}
+            className={cn(styles.openBtn__middle, {
+              [styles["openBtn__middle--open"]]: openMenu,
+            })}
           />
           <HandySvg
             src={stick}
             width={22}
             height={3}
-            className={styles.openBtn__bottom}
+            className={cn(styles.openBtn__bottom, {
+              [styles["openBtn__bottom--open"]]: openMenu,
+            })}
           />
         </IconButton>
-        {/* <IconButton src={closeBtn} width={18} height={18} className={styles.closeBtn} /> */}
       </div>
     </header>
   );

@@ -1,0 +1,26 @@
+.nav {
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.nav__link {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.04em;
+  color: #121c46;
+}
+
+.nav__link:active,
+.nav__link:focus,
+.nav__link:hover {
+  color: #18bbfe;
+}
