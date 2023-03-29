@@ -1,5 +1,6 @@
 import { HandySvg } from "handy-svg";
-import FooterContacts from "components/common/FooterContacts copy/FooterContacts";
+import { Link } from "react-router-dom";
+import Contacts from "components/common/Contacts";
 import NavBar from "components/common/NavBar";
 import logo from "../../../assets/images/mobile/svg/logo-mobile-header.svg";
 import styles from "./footer.module.css";
@@ -13,21 +14,24 @@ const Footer = () => {
         width="115"
         height="27"
       />
-      <NavBar type={"footer"} />
       <div className={styles.address}>
-        <FooterContacts
+        <Contacts
           address="Екатеринбург"
           tel="+7 (343) 287-94-14"
           mail="ekb.office@transatlantic.pro"
-          className={styles.address__contacts}
+          type="footer"
         />
-        <FooterContacts
+        <Contacts
           address="Москва"
           tel="+7 (495) 287-94-14"
           mail="msk.office@transatlantic.pro"
-          className={styles.address__item}
+          type="footer"
         />
       </div>
+      <Link className={styles.footer__button} to={"#"}>
+        Войти в личный кабинет
+      </Link>
+      <NavBar type={"footer"} />
       <div className={styles.privasy}>
         <span className={styles.privasy__policy}>
           Политика конфиденциальности

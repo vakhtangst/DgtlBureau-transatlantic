@@ -3,7 +3,7 @@ import { HandySvg } from "handy-svg";
 import PropTypes from "prop-types";
 import IconButton from "components/ui/IconButton";
 import Button from "components/ui/Button/Button";
-import HeaderContacts from "components/common/HeaderContacts";
+import Contacts from "components/common/Contacts";
 import NavBar from "components/common/NavBar";
 import closeBtn from "../../../assets/images/mobile/svg/close-btn.svg";
 import cn from "classnames";
@@ -29,18 +29,18 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           />
         </IconButton>
       </div>
-      <Link>
-        <Button text="Войти в личный кабинет" className={styles.menu__button} />
+      <Link className={styles.menu__button} to={"#"}>
+        Войти в личный кабинет
       </Link>
       <NavBar />
       <div className={styles.address}>
-        <HeaderContacts
+        <Contacts
           address="Екатеринбург"
           tel="+7 (343) 287-94-14"
           mail="ekb.office@transatlantic.pro"
           className={styles.menu__contacts}
         />
-        <HeaderContacts
+        <Contacts
           address="Москва"
           tel="+7 (495) 287-94-14"
           mail="msk.office@transatlantic.pro"

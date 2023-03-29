@@ -8,6 +8,7 @@
   top: 0;
   right: 0;
   height: 100vh;
+  z-index: 1;
   background-color: #edf6ff;
   padding: 20px 20px 30px 24px;
 }
@@ -32,6 +33,7 @@
 }
 
 .menu__button {
+  transition-duration: 500ms;
   background-color: #18bbfe;
   border-radius: 8px;
   padding: 8px 23px;
@@ -40,6 +42,12 @@
   font-size: 16px;
   color: #ffffff;
   margin-bottom: 34px;
+}
+
+.menu__button:hover {
+  transition-duration: 500ms;
+  background-color: #d5edff;
+  color: #18bbfe;
 }
 
 .address {
