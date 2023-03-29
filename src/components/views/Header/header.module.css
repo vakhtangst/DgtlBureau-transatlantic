@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #edf6ff;
+}
+
+.header__logo {
+  cursor: pointer;
+  fill: #18bbfe;
+}
+
+.header__logo:hover {
+}
+
+.openBtn__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  background-color: #d4edff;
+  border-radius: 6px;
+  padding: 11px;
+}
+
+.openBtn {
+  padding: 0;
+}
+
+.openBtn__top,
+.openBtn__middle,
+.openBtn__bottom {
+  position: absolute;
+}
+
+.openBtn__top {
+  top: 11px;
+  left: 10px;
+}
+
+.openBtn__middle {
+  top: 20px;
+  left: 10px;
+}
+
+.openBtn__bottom {
+  top: 29px;
+  left: 10px;
+}
