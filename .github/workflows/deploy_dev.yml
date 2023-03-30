@@ -1,3 +1,4 @@
+name: Publish dev
 on:
   		push:
     		branches: [dev]
