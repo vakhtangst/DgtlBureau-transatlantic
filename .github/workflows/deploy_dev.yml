@@ -1,8 +1,9 @@
 name: Publish dev
 
 on:
-push:
-branches: [dev]
+  push:
+    branches: 
+		  - 'dev'
 
 jobs:
   build-and-deploy:
