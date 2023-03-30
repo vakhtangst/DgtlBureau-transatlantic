@@ -1,4 +1,5 @@
 import Advantage from "components/views/Advantage";
+import Control from "components/views/Control";
 import Convenient from "components/views/Convenient";
 import Delivery from "components/views/Delivery/Delivery";
 import Hero from "components/views/Hero/Hero";
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Convenient />
       <TrafficTypes />
       <Delivery />
+      <Control />
     </>
   );
 };

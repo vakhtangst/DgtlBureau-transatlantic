@@ -1,0 +1,42 @@
+.control {
+  padding: 0 20px 64px 20px;
+  background-color: #edf6ff;
+}
+
+.control__title {
+  display: inline-block;
+  width: 245px;
+  margin-bottom: 24px;
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+  color: #121c46;
+}
+
+.control__list {
+}
+
+.control__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control__descr,
+.control__blueDescr {
+  display: inline-block;
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.control__descr {
+  width: 230px;
+  color: #121c46;
+}
+
+.control__blueDescr {
+  width: 260px;
+  color: #18bbfe;
+}
