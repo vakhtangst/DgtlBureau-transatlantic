@@ -1,9 +1,9 @@
 import { HandySvg } from "handy-svg";
-import { Link } from "react-router-dom";
 import Contacts from "components/common/Contacts";
 import NavBar from "components/common/NavBar";
 import logo from "../../../assets/images/mobile/svg/logo-mobile-header.svg";
 import styles from "./footer.module.css";
+import ButtonLink from "components/ui/ButtonLink/ButtonLink";
 
 const Footer = () => {
   return (
@@ -14,6 +14,7 @@ const Footer = () => {
         width="115"
         height="27"
       />
+
       <div className={styles.address}>
         <Contacts
           address="Екатеринбург"
@@ -28,10 +29,13 @@ const Footer = () => {
           type="footer"
         />
       </div>
-      <Link className={styles.footer__button} to={"#"}>
-        Войти в личный кабинет
-      </Link>
+
+      <div className={styles.footer__button}>
+        <ButtonLink to={"#"} text="Войти в личный кабинет" color="gray" />
+      </div>
+
       <NavBar type={"footer"} />
+
       <div className={styles.privasy}>
         <span className={styles.privasy__policy}>
           Политика конфиденциальности

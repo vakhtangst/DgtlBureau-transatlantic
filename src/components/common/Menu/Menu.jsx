@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
 import { HandySvg } from "handy-svg";
 import PropTypes from "prop-types";
 import IconButton from "components/ui/IconButton";
-import Button from "components/ui/Button/Button";
+import ButtonLink from "components/ui/ButtonLink/ButtonLink";
 import Contacts from "components/common/Contacts";
 import NavBar from "components/common/NavBar";
 import closeBtn from "../../../assets/images/mobile/svg/close-btn.svg";
@@ -29,10 +28,13 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           />
         </IconButton>
       </div>
-      <Link className={styles.menu__button} to={"#"}>
-        Войти в личный кабинет
-      </Link>
+
+      <div className={styles.menu__blueButton}>
+        <ButtonLink text="Войти в личный кабинет" to="#" color="blue-big" />
+      </div>
+
       <NavBar />
+
       <div className={styles.address}>
         <Contacts
           address="Екатеринбург"
