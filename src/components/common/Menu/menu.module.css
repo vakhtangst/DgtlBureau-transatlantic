@@ -1,0 +1,45 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: absolute;
+  transform: translateX(120%);
+  transition-duration: 700ms;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 1;
+  background-color: #edf6ff;
+  padding: 20px 20px 30px 24px;
+}
+
+.menu--open {
+  z-index: 10;
+  transform: translateX(0%);
+  transition-duration: 700ms;
+}
+
+.menu__blueButton {
+  margin-bottom: 16px;
+}
+
+.closeBtn__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #d4edff;
+  border-radius: 6px;
+  padding: 11px;
+  margin-bottom: 34px;
+}
+
+.address {
+  margin-top: auto;
+}
+
+.address div:not(:last-child) {
+  margin-bottom: 44px;
+}

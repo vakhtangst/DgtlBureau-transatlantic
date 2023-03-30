@@ -1,0 +1,103 @@
+.advantage {
+  padding: 40px 20px;
+  background-image: url("../../../assets/images/mobile/figures/background/background.png");
+}
+
+.advantage__title,
+.advantage__subtitle {
+  font-family: "Dewi";
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.advantage__title {
+  font-size: 36px;
+  line-height: 34px;
+  margin-bottom: 24px;
+}
+
+.advantage__subtitle {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.figures {
+  position: relative;
+  height: 479px;
+}
+
+.figures__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.figures__item--polygon {
+  background-image: url(../../../assets/images/mobile/figures/polygon.png);
+  width: 132px;
+  height: 190px;
+  top: 0;
+}
+.figures__item--ellipse {
+  background-image: url(../../../assets/images/mobile/figures/ellipse.png);
+  width: 132px;
+  height: 183px;
+  right: 0;
+  top: 0px;
+}
+.figures__item--rectangle {
+  background-image: url(../../../assets/images/mobile/figures/rectangle.png);
+  width: 132px;
+  height: 190px;
+  bottom: 153px;
+  left: 0;
+}
+.figures__item--union {
+  background-image: url(../../../assets/images/mobile/figures/union.png);
+  width: 132px;
+  height: 133px;
+  bottom: 153px;
+  right: 0;
+}
+.figures__item--subtract {
+  background-image: url(../../../assets/images/mobile/figures/subtract.png);
+  width: 280px;
+  height: 137px;
+  bottom: 0;
+  left: 0;
+}
+
+.figures__text {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #82b5e8;
+  position: absolute;
+}
+
+.figures__text--polygon {
+  top: 46px;
+}
+
+.figures__text--ellipse {
+  bottom: 39px;
+}
+
+.figures__text--rectangle {
+  top: 82px;
+}
+
+.figures__text--union {
+  bottom: 7px;
+  display: inline-block;
+  width: 74px;
+}
+
+.figures__text--subtract {
+  bottom: 60px;
+}

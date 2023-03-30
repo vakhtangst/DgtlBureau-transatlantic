@@ -1,0 +1,66 @@
+.delivery {
+  background-color: #edf6ff;
+  padding: 16px 20px 80px 20px;
+}
+
+.delivery__title,
+.delivery__descr,
+.delivery__heading,
+.delivery__subheading {
+  display: inline-block;
+}
+
+.delivery__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+  width: 280px;
+  color: #121c46;
+}
+
+.delivery__descr {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  width: 256px;
+  margin-bottom: 32px;
+  color: #121c46;
+}
+
+.delivery__list,
+.delivery__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.delivery__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.delivery__item:last-child h3 {
+  width: 226px;
+}
+
+.delivery__heading {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 24px;
+  width: 255px;
+  margin-bottom: 8px;
+  letter-spacing: -0.04em;
+  color: #18bbfe;
+}
+
+.delivery__subheading {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #121c46;
+}
