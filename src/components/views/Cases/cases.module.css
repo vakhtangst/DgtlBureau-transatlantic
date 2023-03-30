@@ -1,0 +1,83 @@
+.cases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 20px 27px 20px;
+  background-color: #18bbfe;
+}
+
+.cases__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 32px;
+  margin-right: auto;
+}
+
+.cases__list {
+  margin-bottom: 16px;
+}
+
+.cases__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  background-color: #00a3e6;
+  border-radius: 16px;
+  width: 280px;
+  height: 172px;
+  padding: 0 0 19px 23px;
+}
+
+.cases__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.cases__heading {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  width: 170px;
+}
+
+.cases__wrapper {
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+.cases__icon {
+}
+
+.cases__image {
+  position: absolute;
+  border-radius: 16px;
+  top: 0;
+  right: 0;
+}
+
+.cases__image--shipSecond {
+}
+.cases__image--crane {
+}
+.cases__image--lighthouse {
+  top: 11px;
+  right: -1px;
+}
+.cases__image--shipFirst {
+}
+
+.cases__button {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
