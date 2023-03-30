@@ -1,0 +1,57 @@
+.hero {
+  padding: 5px 0px 34px 0px;
+  background-color: #edf6ff;
+}
+
+.hero__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: -0.04em;
+  color: #121c46;
+  margin: 0 20px 32px 20px;
+}
+
+.hero__background {
+  position: relative;
+  height: 430px;
+  margin-bottom: 40px;
+}
+
+.hero__descr {
+  display: inline-block;
+  margin: 0 20px;
+  width: 280px;
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  color: #121c46;
+}
+
+.hero__letter {
+  position: absolute;
+}
+
+.hero__letter--left {
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+.hero__letter--right {
+  top: 0px;
+  right: 0px;
+  z-index: 4;
+}
+
+.hero__letter--bottom {
+  z-index: 6;
+  left: 0px;
+  bottom: -150px;
+}
+
+.hero__container {
+  position: absolute;
+  z-index: 5;
+  bottom: 0px;
+}
